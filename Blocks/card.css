@@ -40,4 +40,23 @@ font-style: Medium;
 font-size: 20px;
 line-height: 120%;
 letter-spacing: 0%;
+ text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 627px) {
+.card__title {
+  font-size: 16px;
+}
+
+.card__image {
+width: 288px;
+height: 288px;
+}
+
+.card__content{
+width: 288px;
+}
+
 }
