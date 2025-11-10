@@ -1,8 +1,9 @@
 .card {
-  width: 413px;
+  width: 100%;
 }
 
 .card__image {
+  margin-bottom: 12px;
   height: 413px;
   width: 413px;
   display: flex;
@@ -21,11 +22,14 @@
  background-image: url('../images/Like-Icon.svg');
   width: 23px;
   height: 20px;
-  top: 425px;
-  left: 390px;
+  position: relative;
   opacity: 40%;
   border: none;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 0;
 }
 
 .card__like-btn:hover {
@@ -36,10 +40,9 @@
 .card__title {
   font-family: 'Poppins', sans-serif;
 font-weight: 500;
-font-style: medium;
 font-size: 20px;
 line-height: 120%;
-letter-spacing: 0%;
+letter-spacing: 0;
  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

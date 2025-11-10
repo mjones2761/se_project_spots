@@ -8,7 +8,7 @@
   height: 190px;
   width: 190px;
   margin-right: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .profile__column {
@@ -17,6 +17,7 @@ flex-direction: column;
 }
 
 .profile__name {
+  color: #212121;
   margin: 0 0 12px;
   max-width: 420px;
   font-weight: 500;
@@ -25,10 +26,14 @@ flex-direction: column;
   text-overflow: ellipsis;
 -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  font-size: 32px;
+  line-height: 1;
 
 }
 
 .profile__description {
+  color: #212121B2;
+  font-size: 16px;
   margin: 0;
 font-weight: 500;
 max-width: 420px;
@@ -40,6 +45,9 @@ max-width: 420px;
 }
 
 .profile__edit-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 margin-top: auto;
 opacity: 0.7;
 font-size: 16px;
@@ -55,13 +63,13 @@ border: none;
 
 .profile__add-btn {
 margin-left: auto;
-padding: 18, 32, 18, 32;
+padding: 18px 32px;
 width: 157px;
 height: 52px;
 gap: 8px;
 border-radius: 8px;
 background-color: #212121;
-color: #fff;
+color: #fcf5e5;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -69,13 +77,13 @@ align-self: flex-end;
 cursor: pointer;
 }
 .profile__add-btn:hover {
-  opacity: 60%;
+  opacity: .8;
 }
 
 .plus-icon {
   width: 12px;
   height: 12px;
-  border: 2px;
+
 }
 
 
@@ -95,7 +103,7 @@ cursor: pointer;
 
 .profile__edit-btn {
   align-self: center;
-  width: 100%;
+
   margin-top: 32px;
   gap: 8px;
 }
