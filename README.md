@@ -10,10 +10,10 @@ Below is a link to a figma page that shows what the project looks like for mobil
 
 * [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
   
- Below is a link to the git hub 
+ # Below is a link to the git hub 
  https://github.com/mjones2761/se_project_spots
 
- below is a link to the website demonstration as well. 
+ # below is a link to the website demonstration as well. 
 website url https://mjones2761.github.io/se_project_spots/index.html
 
 ### Project Pitch Video 
