@@ -15,3 +15,8 @@ Below is a link to a figma page that shows what the project looks like for mobil
 
  below is a link to the website demonstration as well. 
 website url https://mjones2761.github.io/se_project_spots/index.html
+
+### Project Pitch Video 
+Check out (https://drive.google.com/file/d/18ppCFybdEc1A2pxdWb5gE4S7y63NE3VP/view?usp=sharing)), where I describe my 
+ project and some challenges I faced while building it.
+
