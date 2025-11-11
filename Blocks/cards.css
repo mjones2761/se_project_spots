@@ -1,6 +1,6 @@
 .cards{
-  padding-top: 20px 0 40px;
-border-bottom: 1px solid #21212166;
+  padding: 20px 0 40px;
+
 
 }
 
@@ -14,7 +14,7 @@ border-bottom: 1px solid #21212166;
   gap: 40px 20px;
   padding-bottom: 40px;
   justify-content: center;
-  border-bottom: 1px solid #212121;
+  border-bottom: 1px solid #21212166;
 }
 
 @media screen and (max-width: 627px) {
