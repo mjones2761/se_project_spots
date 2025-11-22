@@ -1,5 +1,5 @@
 .modal {
-visibility: hidden;
+opacity: 0;
 background-color: #00000080;
 position: fixed;
 top: 0;
@@ -12,7 +12,7 @@ align-items: center;
 padding: 10px;
  transform: scale(0.97);
   transition:
-    opacity 0.25s ease,
+    opacity 0.35s ease,
     visibility 0.35s ease,
     transform 0.25s ease;
 }
@@ -56,9 +56,7 @@ border: none;
 .modal__title {
   margin: 0 0 32px;
 font-weight: 500;
-font-style: Medium;
 font-size: 32px;
-leading-trim: NONE;
 }
 
 .modal__form {
@@ -75,7 +73,7 @@ margin: 0 0 32px;
   margin: 8px 0 0;
   border: 1px solid #21212166;
   padding: 16px 12px;
-  width: 630px;
+  width: 100%; box-sizing: border-box;
   border-radius: 8px;
 }
 
@@ -105,7 +103,7 @@ font-size: 20px;
 }
 
 .modal__input {
-  width: 100%
+  width: 100%;
 }
 
 

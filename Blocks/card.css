@@ -9,7 +9,6 @@
   display: flex;
   object-fit: cover;
   border-radius: 8px;
-  display: block;
 }
 
 .card__content {
