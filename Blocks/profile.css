@@ -60,6 +60,7 @@ background-color: transparent;
 
 .profile__edit-btn:hover {
   opacity: 1;
+  border: none;
 }
 
 .profile__add-btn {
