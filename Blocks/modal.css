@@ -41,13 +41,13 @@ right: 50px;
 display: flex;
 justify-content: center;
 cursor: pointer;
-opacity: 40%;
+opacity: 0.4;
 border: none;
 background-color: transparent;
 }
 
 .modal__close-btn:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .modal__close-img {
@@ -94,7 +94,7 @@ margin: 0 0 32px;
 }
 
 .modal__submit-btn:hover {
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 
@@ -141,7 +141,7 @@ padding: 4px 8px;
 }
 
 .modal__close-btn_type_preview:hover {
-  opacity: 70%;
+  opacity: 0.7;
 }
 @media screen and (max-width: 627px) {
 
