@@ -20,3 +20,8 @@ website url https://mjones2761.github.io/se_project_spots/index.html
 Check out (https://drive.google.com/file/d/18ppCFybdEc1A2pxdWb5gE4S7y63NE3VP/view?usp=sharing)), where I describe my 
  project and some challenges I faced while building it.
 
+ ### Project Pitch video 2 
+
+ Check out (https://www.loom.com/share/80aabcbad1374a32a329598cbe17cae2)
+ Where I share more about my projects the Changes I have made and the frustrations along the way.
+

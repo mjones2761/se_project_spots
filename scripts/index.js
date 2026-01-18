@@ -128,6 +128,21 @@ profileDescriptionEl.textContent = editProfileDescriptionInput.value;
 
 }
 
+document.addEventListener("keydown", function (evt) {
+  if (evt.key === "Escape") {
+    const openModalEl = document.querySelector(".modal_is-opened");
+    if (openModalEl) {
+      closeModal(openModalEl);
+    }
+  }
+});
+
+document.addEventListener("click", function (evt) {
+  if (evt.target.classList.contains("modal_is-opened")) {
+    closeModal(evt.target);
+  }
+});
+
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
 
@@ -141,6 +156,10 @@ addCardFormElement.addEventListener("submit", function (evt) {
   });
 cardsList.prepend(cardElement);
 addCardFormElement.reset();
+toggleButtonState(
+  Array.from(addCardFormElement.querySelectorAll(".modal__input")),
+  addCardFormElement.querySelector(".modal__submit-btn")
+);
   closeModal(newPostModal);
   });
 
