@@ -69,8 +69,8 @@ cardLikeBtnEL.addEventListener("click", function () {
   cardLikeBtnEL.classList.toggle("card__like-btn_active");
 });
 
-const cardDeletebtnEl = cardElement.querySelector(".card__delete-button");
-cardDeletebtnEl.addEventListener("click", () => {
+const cardDeleteButtonEl = cardElement.querySelector(".card__delete-button");
+cardDeleteButtonEl.addEventListener("click", () => {
   cardElement.remove();
 });
 
@@ -88,12 +88,20 @@ previewModalCloseBtn.addEventListener("click", () => {
 return cardElement;
 }
 
+previewModalCloseBtn.addEventListener("click", () => {
+  closeModal(previewModal);
+});
+
 function openModal(modal) {
 modal.classList.add("modal_is-opened");
+document.addEventListener('keydown', handleEscape);
+document.addEventListener('click', closeOnOverlay);
 }
 
 function closeModal(modal) {
 modal.classList.remove("modal_is-opened");
+document.removeEventListener('click', closeOnOverlay);
+document.removeEventListener('keydown', handleEscape);
 }
 
 editProfileBtn.addEventListener("click", () => {
@@ -123,25 +131,26 @@ newPostCloseBtn.addEventListener("click", () => {
 function handleEditProfileSubmit(evt) {
   evt.preventDefault();
   profileNameEl.textContent = editProfileNameInput.value;
+
 profileDescriptionEl.textContent = editProfileDescriptionInput.value;
   closeModal(editProfileModal);
 
 }
 
-document.addEventListener("keydown", function (evt) {
-  if (evt.key === "Escape") {
+function handleEscape(evt) {
+  if (evt.key === 'Escape') {
     const openModalEl = document.querySelector(".modal_is-opened");
     if (openModalEl) {
       closeModal(openModalEl);
     }
   }
-});
+}
 
-document.addEventListener("click", function (evt) {
-  if (evt.target.classList.contains("modal_is-opened")) {
+function closeOnOverlay(evt) {
+  if (evt.target.classList.contains('modal')) {
     closeModal(evt.target);
   }
-});
+}
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 

@@ -61,11 +61,19 @@ const setEventListeners = (formEl) => {
   });
 };
 
-const enableValidation = () => {
-  const formList = document.querySelectorAll(".modal__form");
+const enableValidation = (settings) => {
+  const formList = document.querySelectorAll(settings.formSelector);
   formList.forEach((formEl) => {
-    setEventListeners(formEl);
+    setEventListeners(formEl, settings);
   });
 };
 
-enableValidation();
+enableValidation(validationSettings);
+
+const validationSettings = {
+  formSelector: '.modal__form',
+  inputSelector: '.modal__input',
+  submitButtonSelector: '.modal__submit-btn',
+  inputErrorClass: 'modal__input_type_error',
+  inactiveButtonClass: 'modal__submit-btn_disabled'
+};
