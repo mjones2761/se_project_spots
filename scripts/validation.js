@@ -67,9 +67,6 @@ const enableValidation = (settings) => {
     setEventListeners(formEl, settings);
   });
 };
-
-enableValidation(validationSettings);
-
 const validationSettings = {
   formSelector: '.modal__form',
   inputSelector: '.modal__input',
@@ -77,3 +74,5 @@ const validationSettings = {
   inputErrorClass: 'modal__input_type_error',
   inactiveButtonClass: 'modal__submit-btn_disabled'
 };
+enableValidation(validationSettings);
+
